@@ -34,7 +34,7 @@
     <form action="{{ url_for('predict')}}"method="post" style=" margin: auto;width: 100%;border: 3px solid rgba(0, 0, 0, 0);padding: 10px;">
       <input type="float" min="0" name="enginesize" placeholder="Engine Size (L)" required="required" />
       <input type="float" min="0"name="cylinders" placeholder="Number Of Cylinders " required="required" />
-      <input type="float" min="0" name="fuel" placeholder="Fuel Type (80,92,95) " required="required" />
+      <input type="float" min="0" name="fuel" placeholder="Average Fuel Consumption per 100km " required="required" />
       <button type="submit" class="btn">Predict</button>
     </form>
      {{ prediction_text }}
