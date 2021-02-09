@@ -24,7 +24,7 @@ def predict():
 
     output = round(prediction[0], 2)
 
-    return render_template('index.html', prediction_text='The Vehicle Emits:{} g/km'.format(output))
+    return render_template('index.html', prediction_text="vehicle's CO₂ emissions:{} g/km".format(output))
 
 if __name__ == "__main__":
     app.run(debug=True)
